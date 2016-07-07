@@ -28,10 +28,9 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:ckd_sandwich
+LIBS:polystack
 LIBS:ti-gate
 LIBS:atmel-sam
-LIBS:m0-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -49,15 +48,15 @@ $EndDescr
 Text Notes 7500 7550 0    118  ~ 0
 m0 v1
 $Comp
-L CKD_SANDWICH PORT_OUT1
+L POLYSTACK_CONNECTOR PORT_OUT1
 U 1 1 5711A1E7
 P 9000 1450
 F 0 "PORT_OUT1" H 9000 -2700 60  0000 C CNN
-F 1 "CKD_SANDWICH" H 9000 -2600 60  0000 C CNN
+F 1 "POLYSTACK_CONNECTOR" H 9000 -2600 60  0000 C CNN
 F 2 "hirose-df40:DF40-80pin-Header" H 9000 -2750 60  0001 C CNN
 F 3 "" H 9000 -2750 60  0000 C CNN
 	1    9000 1450
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L +5V #PWR01
@@ -68,7 +67,7 @@ F 1 "+5V" H 7650 3440 50  0000 C CNN
 F 2 "" H 7650 3300 60  0000 C CNN
 F 3 "" H 7650 3300 60  0000 C CNN
 	1    7650 3300
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	8300 3300 8300 3800
@@ -171,7 +170,7 @@ F 1 "SAMD21J" H 2900 3500 60  0000 C CNN
 F 2 "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm" H 3100 3400 60  0001 C CNN
 F 3 "" H 3100 3400 60  0000 C CNN
 	1    3100 3400
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Text Label 2650 5100 3    60   ~ 0
 TIMG1_CH1
@@ -298,7 +297,7 @@ F 1 "0.1uF" H 2810 5420 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2800 5500 50  0001 C CNN
 F 3 "" H 2800 5500 50  0000 C CNN
 	1    2800 5500
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L C_Small C2
@@ -309,7 +308,7 @@ F 1 "0.1uF" H 1710 3220 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1700 3300 50  0001 C CNN
 F 3 "" H 1700 3300 50  0000 C CNN
 	1    1700 3300
-	-1   0    0    1   
+	-1   0    0    1
 $EndComp
 $Comp
 L C_Small C5
@@ -320,7 +319,7 @@ F 1 "0.1uF" H 3260 970 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3250 1050 50  0001 C CNN
 F 3 "" H 3250 1050 50  0000 C CNN
 	1    3250 1050
-	0    -1   -1   0   
+	0    -1   -1   0
 $EndComp
 $Comp
 L C_Small C6
@@ -331,7 +330,7 @@ F 1 "1uF" H 3260 1220 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3250 1300 50  0001 C CNN
 F 3 "" H 3250 1300 50  0000 C CNN
 	1    3250 1300
-	0    -1   -1   0   
+	0    -1   -1   0
 $EndComp
 $Comp
 L C_Small C9
@@ -342,7 +341,7 @@ F 1 "0.1uF" H 4460 4020 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4450 4100 50  0001 C CNN
 F 3 "" H 4450 4100 50  0000 C CNN
 	1    4450 4100
-	-1   0    0    1   
+	-1   0    0    1
 $EndComp
 $Comp
 L C_Small C8
@@ -353,7 +352,7 @@ F 1 "0.1uF" H 4410 2570 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4400 2650 50  0001 C CNN
 F 3 "" H 4400 2650 50  0000 C CNN
 	1    4400 2650
-	-1   0    0    1   
+	-1   0    0    1
 $EndComp
 $Comp
 L C_Small C4
@@ -363,8 +362,8 @@ F 0 "C4" H 3260 770 50  0000 L CNN
 F 1 "10uF" H 3260 620 50  0000 L CNN
 F 2 "Capacitors_SMD:C_1206_HandSoldering" H 3250 700 50  0001 C CNN
 F 3 "" H 3250 700 50  0000 C CNN
-	1    3250 700 
-	0    1    -1   0   
+	1    3250 700
+	0    1    -1   0
 $EndComp
 $Comp
 L C_Small C1
@@ -375,7 +374,7 @@ F 1 "10uF" H 1410 3220 50  0000 L CNN
 F 2 "Capacitors_SMD:C_1206_HandSoldering" H 1400 3300 50  0001 C CNN
 F 3 "" H 1400 3300 50  0000 C CNN
 	1    1400 3300
-	-1   0    0    1   
+	-1   0    0    1
 $EndComp
 $Comp
 L INDUCTOR_SMALL L1
@@ -386,7 +385,7 @@ F 1 "INDUCTOR_SMALL" H 950 3150 50  0000 C CNN
 F 2 "Inductors_NEOSID:Neosid_Inductor_SM0603CG" H 950 3200 50  0001 C CNN
 F 3 "" H 950 3200 50  0000 C CNN
 	1    950  3200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L GND #PWR02
@@ -397,7 +396,7 @@ F 1 "GND" H 4700 4050 50  0000 C CNN
 F 2 "" H 4700 4200 50  0000 C CNN
 F 3 "" H 4700 4200 50  0000 C CNN
 	1    4700 4200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	4100 4050 4350 4050
@@ -432,7 +431,7 @@ F 1 "GND" H 3000 5350 50  0000 C CNN
 F 2 "" H 3000 5500 50  0000 C CNN
 F 3 "" H 3000 5500 50  0000 C CNN
 	1    3000 5500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	2700 5850 2600 5850
@@ -456,7 +455,7 @@ F 1 "GND" H 4550 2600 50  0000 C CNN
 F 2 "" H 4550 2750 50  0000 C CNN
 F 3 "" H 4550 2750 50  0000 C CNN
 	1    4550 2750
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Connection ~ 4400 2550
 Connection ~ 4400 2750
@@ -475,12 +474,12 @@ Wire Wire Line
 Wire Wire Line
 	3150 1550 3100 1550
 Wire Wire Line
-	3100 1550 3100 700 
+	3100 1550 3100 700
 Wire Wire Line
 	3100 1050 3150 1050
 Wire Wire Line
-	2950 700  3150 700 
-Connection ~ 3100 700 
+	2950 700  3150 700
+Connection ~ 3100 700
 Connection ~ 3100 1050
 Wire Wire Line
 	2000 3250 1800 3250
@@ -506,7 +505,7 @@ F 1 "GND" H 1200 3250 50  0000 C CNN
 F 2 "" H 1200 3400 50  0000 C CNN
 F 3 "" H 1200 3400 50  0000 C CNN
 	1    1200 3400
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Connection ~ 1400 3400
 Wire Wire Line
@@ -520,7 +519,7 @@ F 1 "0.1uF" H 3510 1170 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3500 1250 50  0001 C CNN
 F 3 "" H 3500 1250 50  0000 C CNN
 	1    3500 1250
-	0    -1   -1   0   
+	0    -1   -1   0
 $EndComp
 Wire Wire Line
 	3550 1650 3550 1350
@@ -539,11 +538,11 @@ F 0 "#PWR06" H 3500 450 50  0001 C CNN
 F 1 "GND" H 3500 550 50  0000 C CNN
 F 2 "" H 3500 700 50  0000 C CNN
 F 3 "" H 3500 700 50  0000 C CNN
-	1    3500 700 
-	1    0    0    -1  
+	1    3500 700
+	1    0    0    -1
 $EndComp
 Wire Wire Line
-	3350 700  3500 700 
+	3350 700  3500 700
 $Comp
 L R_Small R5
 U 1 1 5738EC80
@@ -553,7 +552,7 @@ F 1 "330" H 3730 1010 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" H 3700 1050 50  0001 C CNN
 F 3 "" H 3700 1050 50  0000 C CNN
 	1    3700 1050
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L R_Small R6
@@ -564,7 +563,7 @@ F 1 "10k" H 3980 1210 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" H 3950 1250 50  0001 C CNN
 F 3 "" H 3950 1250 50  0000 C CNN
 	1    3950 1250
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 Wire Wire Line
 	3600 1250 3850 1250
@@ -584,7 +583,7 @@ F 1 "10k" H 4280 1260 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" H 4250 1300 50  0001 C CNN
 F 3 "" H 4250 1300 50  0000 C CNN
 	1    4250 1300
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	3750 1650 3750 1450
@@ -611,7 +610,7 @@ F 1 "1k" H 2130 1060 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" H 2100 1100 50  0001 C CNN
 F 3 "" H 2100 1100 50  0000 C CNN
 	1    2100 1100
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	2100 900  2100 1000
@@ -626,7 +625,7 @@ F 1 "USB_OTG" H 4200 7250 50  0000 C CNN
 F 2 "fci:Mini-USB-B-EDGE" V 4150 6950 50  0001 C CNN
 F 3 "" V 4150 6950 50  0000 C CNN
 	1    4200 7050
-	-1   0    0    1   
+	-1   0    0    1
 $EndComp
 $Comp
 L GND #PWR07
@@ -637,7 +636,7 @@ F 1 "GND" H 3600 7000 50  0000 C CNN
 F 2 "" H 3600 7150 50  0000 C CNN
 F 3 "" H 3600 7150 50  0000 C CNN
 	1    3600 7150
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Text Label 4200 6750 1    60   ~ 0
 USB+
@@ -652,7 +651,7 @@ F 1 "+5VA" H 4400 6540 50  0000 C CNN
 F 2 "" H 4400 6400 50  0000 C CNN
 F 3 "" H 4400 6400 50  0000 C CNN
 	1    4400 6400
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	4400 6750 4400 6400
@@ -680,7 +679,7 @@ F 1 "2k" H 7330 1660 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" H 7300 1700 50  0001 C CNN
 F 3 "" H 7300 1700 50  0000 C CNN
 	1    7300 1700
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L R_Small R8
@@ -691,7 +690,7 @@ F 1 "2k" H 7130 1660 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" H 7100 1700 50  0001 C CNN
 F 3 "" H 7100 1700 50  0000 C CNN
 	1    7100 1700
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L VDD #PWR09
@@ -702,7 +701,7 @@ F 1 "VDD" H 7100 1650 50  0000 C CNN
 F 2 "" H 7100 1500 50  0000 C CNN
 F 3 "" H 7100 1500 50  0000 C CNN
 	1    7100 1500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L VDD #PWR010
@@ -713,7 +712,7 @@ F 1 "VDD" H 7300 1650 50  0000 C CNN
 F 2 "" H 7300 1500 50  0000 C CNN
 F 3 "" H 7300 1500 50  0000 C CNN
 	1    7300 1500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L VDD #PWR011
@@ -724,7 +723,7 @@ F 1 "VDD" H 4100 1400 50  0000 C CNN
 F 2 "" H 4100 1250 50  0000 C CNN
 F 3 "" H 4100 1250 50  0000 C CNN
 	1    4100 1250
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L VDD #PWR012
@@ -734,8 +733,8 @@ F 0 "#PWR012" H 2950 550 50  0001 C CNN
 F 1 "VDD" H 2950 850 50  0000 C CNN
 F 2 "" H 2950 700 50  0000 C CNN
 F 3 "" H 2950 700 50  0000 C CNN
-	1    2950 700 
-	1    0    0    -1  
+	1    2950 700
+	1    0    0    -1
 $EndComp
 $Comp
 L VDD #PWR013
@@ -746,7 +745,7 @@ F 1 "VDD" H 4550 2700 50  0000 C CNN
 F 2 "" H 4550 2550 50  0000 C CNN
 F 3 "" H 4550 2550 50  0000 C CNN
 	1    4550 2550
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L VDD #PWR014
@@ -757,7 +756,7 @@ F 1 "VDD" H 4700 4150 50  0000 C CNN
 F 2 "" H 4700 4000 50  0000 C CNN
 F 3 "" H 4700 4000 50  0000 C CNN
 	1    4700 4000
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L VDD #PWR015
@@ -768,7 +767,7 @@ F 1 "VDD" H 2600 6000 50  0000 C CNN
 F 2 "" H 2600 5850 50  0000 C CNN
 F 3 "" H 2600 5850 50  0000 C CNN
 	1    2600 5850
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L VDD #PWR016
@@ -779,7 +778,7 @@ F 1 "VDD" H 600 3350 50  0000 C CNN
 F 2 "" H 600 3200 50  0000 C CNN
 F 3 "" H 600 3200 50  0000 C CNN
 	1    600  3200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L VDD #PWR017
@@ -789,8 +788,8 @@ F 0 "#PWR017" H 2100 750 50  0001 C CNN
 F 1 "VDD" H 2100 1050 50  0000 C CNN
 F 2 "" H 2100 900 50  0000 C CNN
 F 3 "" H 2100 900 50  0000 C CNN
-	1    2100 900 
-	1    0    0    -1  
+	1    2100 900
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	7100 1500 7100 1600
@@ -801,20 +800,20 @@ Wire Wire Line
 Wire Wire Line
 	7300 1600 7300 1500
 $Sheet
-S 5200 4950 1150 650 
+S 5200 4950 1150 650
 U 57390902
 F0 "Power" 60
 F1 "Power.sch" 60
-F2 "CURRENT" I R 6350 5100 60 
-F3 "+BATT" I R 6350 5200 60 
+F2 "CURRENT" I R 6350 5100 60
+F3 "+BATT" I R 6350 5200 60
 $EndSheet
 $Sheet
-S 5250 6200 1150 550 
+S 5250 6200 1150 550
 U 5739092B
 F0 "Reset" 60
 F1 "Reset.sch" 60
-F2 "RESET" I R 6400 6300 60 
-F3 "BOOT0" I R 6400 6400 60 
+F2 "RESET" I R 6400 6300 60
+F3 "BOOT0" I R 6400 6400 60
 $EndSheet
 Text Label 6400 6300 0    60   ~ 0
 nRESET
@@ -855,7 +854,7 @@ F 1 "CONN_01X06" V 1000 5350 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Angled_1x06" H 900 5350 50  0001 C CNN
 F 3 "" H 900 5350 50  0000 C CNN
 	1    900  5350
-	-1   0    0    1   
+	-1   0    0    1
 $EndComp
 $Comp
 L GND #PWR018
@@ -866,7 +865,7 @@ F 1 "GND" H 1400 5450 50  0000 C CNN
 F 2 "" H 1400 5600 50  0000 C CNN
 F 3 "" H 1400 5600 50  0000 C CNN
 	1    1400 5600
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	1100 5100 1400 5100
@@ -883,7 +882,7 @@ F 1 "1k" H 3030 6760 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" H 3000 6800 50  0001 C CNN
 F 3 "" H 3000 6800 50  0000 C CNN
 	1    3000 6800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L R_Small R2
@@ -894,7 +893,7 @@ F 1 "1k" H 2730 6760 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" H 2700 6800 50  0001 C CNN
 F 3 "" H 2700 6800 50  0000 C CNN
 	1    2700 6800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L R_Small R3
@@ -905,7 +904,7 @@ F 1 "1k" H 2430 6760 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" H 2400 6800 50  0001 C CNN
 F 3 "" H 2400 6800 50  0000 C CNN
 	1    2400 6800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L Led_Small D1
@@ -916,7 +915,7 @@ F 1 "GREEN" H 2825 6400 50  0000 L CNN
 F 2 "LEDs:LED_0603" V 3000 6500 50  0001 C CNN
 F 3 "" V 3000 6500 50  0000 C CNN
 	1    3000 6500
-	0    -1   -1   0   
+	0    -1   -1   0
 $EndComp
 $Comp
 L Led_Small D2
@@ -927,7 +926,7 @@ F 1 "YELLOW" H 2525 6400 50  0000 L CNN
 F 2 "LEDs:LED_0603" V 2700 6500 50  0001 C CNN
 F 3 "" V 2700 6500 50  0000 C CNN
 	1    2700 6500
-	0    -1   -1   0   
+	0    -1   -1   0
 $EndComp
 $Comp
 L Led_Small D3
@@ -938,7 +937,7 @@ F 1 "RED" H 2300 6400 50  0000 L CNN
 F 2 "LEDs:LED_0603" V 2400 6500 50  0001 C CNN
 F 3 "" V 2400 6500 50  0000 C CNN
 	1    2400 6500
-	0    -1   -1   0   
+	0    -1   -1   0
 $EndComp
 $Comp
 L VDD #PWR019
@@ -949,7 +948,7 @@ F 1 "VDD" H 2700 6350 50  0000 C CNN
 F 2 "" H 2700 6200 50  0000 C CNN
 F 3 "" H 2700 6200 50  0000 C CNN
 	1    2700 6200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Text Label 2400 7000 3    60   ~ 0
 LED3
@@ -987,7 +986,7 @@ F 1 "GND" H 7650 2750 50  0000 C CNN
 F 2 "" H 7650 2900 50  0000 C CNN
 F 3 "" H 7650 2900 50  0000 C CNN
 	1    7650 2900
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	8300 2700 7650 2700
@@ -1005,7 +1004,7 @@ F 1 "VDD" H 7800 3150 50  0000 C CNN
 F 2 "" H 7800 3000 50  0000 C CNN
 F 3 "" H 7800 3000 50  0000 C CNN
 	1    7800 3000
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	7800 3000 8300 3000
@@ -1026,7 +1025,7 @@ F 1 "GND" H 10350 3650 50  0000 C CNN
 F 2 "" H 10350 3800 50  0000 C CNN
 F 3 "" H 10350 3800 50  0000 C CNN
 	1    10350 3800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	9700 3800 10350 3800

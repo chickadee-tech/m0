@@ -28,10 +28,9 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:ckd_sandwich
+LIBS:polystack
 LIBS:ti-gate
 LIBS:atmel-sam
-LIBS:m0-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -55,7 +54,7 @@ F 1 "SW_PUSH" H 5100 3820 50  0000 C CNN
 F 2 "Buttons_Switches_SMD:SW_SPST_EVQP7A" H 5100 3900 60  0001 C CNN
 F 3 "" H 5100 3900 60  0000 C CNN
 	1    5100 3900
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Text HLabel 5400 4550 3    60   Input ~ 0
 RESET
@@ -68,7 +67,7 @@ F 1 "2.2uF" H 6975 3700 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6988 3650 30  0001 C CNN
 F 3 "" H 6950 3800 60  0000 C CNN
 	1    6950 3800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L R R9
@@ -79,7 +78,7 @@ F 1 "470k" V 6000 3250 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 5930 3250 30  0001 C CNN
 F 3 "" H 6000 3250 30  0000 C CNN
 	1    6000 3250
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L R R10
@@ -90,7 +89,7 @@ F 1 "100k" V 6450 3550 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 6380 3550 30  0001 C CNN
 F 3 "" H 6450 3550 30  0000 C CNN
 	1    6450 3550
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 Text HLabel 8250 3000 2    60   Input ~ 0
 BOOT0
@@ -127,7 +126,7 @@ F 1 "VDD" H 6000 3100 50  0000 C CNN
 F 2 "" H 6000 2950 60  0000 C CNN
 F 3 "" H 6000 2950 60  0000 C CNN
 	1    6000 2950
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	6000 3100 6000 2950
@@ -140,7 +139,7 @@ F 1 "Q_NMOS_GSD" H 6550 3850 50  0000 R CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 6100 4000 29  0001 C CNN
 F 3 "" H 5900 3900 60  0000 C CNN
 	1    5900 3900
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L Q_NMOS_GSD Q4
@@ -151,7 +150,7 @@ F 1 "Q_NMOS_GSD" H 8150 3500 50  0000 R CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 7700 3650 29  0001 C CNN
 F 3 "" H 7500 3550 60  0000 C CNN
 	1    7500 3550
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L CONN_01X01 P6
@@ -162,7 +161,7 @@ F 1 "RESET" V 5500 3450 50  0000 C CNN
 F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 5400 3450 60  0001 C CNN
 F 3 "" H 5400 3450 60  0000 C CNN
 	1    5400 3450
-	0    -1   -1   0   
+	0    -1   -1   0
 $EndComp
 Connection ~ 5400 3900
 $Comp
@@ -174,7 +173,7 @@ F 1 "BOOT0" H 8150 2700 50  0000 C CNN
 F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 7950 2700 60  0001 C CNN
 F 3 "" H 7950 2700 60  0000 C CNN
 	1    7950 2700
-	0    -1   -1   0   
+	0    -1   -1   0
 $EndComp
 Wire Wire Line
 	8250 3000 7600 3000
@@ -192,7 +191,7 @@ F 1 "GND" H 4800 4400 50  0000 C CNN
 F 2 "" H 4800 4550 50  0000 C CNN
 F 3 "" H 4800 4550 50  0000 C CNN
 	1    4800 4550
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L GND #PWR034
@@ -203,7 +202,7 @@ F 1 "GND" H 6000 4250 50  0000 C CNN
 F 2 "" H 6000 4400 50  0000 C CNN
 F 3 "" H 6000 4400 50  0000 C CNN
 	1    6000 4400
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L GND #PWR035
@@ -214,7 +213,7 @@ F 1 "GND" H 6950 4250 50  0000 C CNN
 F 2 "" H 6950 4400 50  0000 C CNN
 F 3 "" H 6950 4400 50  0000 C CNN
 	1    6950 4400
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L GND #PWR036
@@ -225,7 +224,7 @@ F 1 "GND" H 7600 3600 50  0000 C CNN
 F 2 "" H 7600 3750 50  0000 C CNN
 F 3 "" H 7600 3750 50  0000 C CNN
 	1    7600 3750
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Text Notes 7050 7050 0    60   ~ 0
 Copyright 2016 Chickadee Tech LLC\n\nThis work is licensed under the Creative Commons Attribution 4.0 International License.\nTo view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/\nor send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.\n

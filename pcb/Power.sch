@@ -28,10 +28,9 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:ckd_sandwich
+LIBS:polystack
 LIBS:ti-gate
 LIBS:atmel-sam
-LIBS:m0-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -55,7 +54,7 @@ F 1 "+5VA" H 7750 2940 50  0000 C CNN
 F 2 "" H 7750 2800 60  0000 C CNN
 F 3 "" H 7750 2800 60  0000 C CNN
 	1    7750 2800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Text Notes 8050 2600 2    60   ~ 0
 USB Power
@@ -68,7 +67,7 @@ F 1 "+5V" H 3350 2240 50  0000 C CNN
 F 2 "" H 3350 2100 60  0000 C CNN
 F 3 "" H 3350 2100 60  0000 C CNN
 	1    3350 2100
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L VDD #PWR025
@@ -79,7 +78,7 @@ F 1 "VDD" H 7300 4200 50  0000 C CNN
 F 2 "" H 7300 4050 60  0000 C CNN
 F 3 "" H 7300 4050 60  0000 C CNN
 	1    7300 4050
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	6900 2600 6900 3300
@@ -100,7 +99,7 @@ F 1 "1uF+" H 7310 4420 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7300 4500 60  0001 C CNN
 F 3 "" H 7300 4500 60  0000 C CNN
 	1    7300 4500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L CP1_Small C11
@@ -111,7 +110,7 @@ F 1 "10uF+" H 5960 4420 50  0000 L CNN
 F 2 "Capacitors_SMD:C_1206_HandSoldering" H 5950 4500 60  0001 C CNN
 F 3 "" H 5950 4500 60  0000 C CNN
 	1    5950 4500
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Connection ~ 7300 4300
 Wire Wire Line
@@ -139,7 +138,7 @@ F 1 "PWR_FLAG" H 3700 2330 50  0000 C CNN
 F 2 "" H 3700 2150 60  0000 C CNN
 F 3 "" H 3700 2150 60  0000 C CNN
 	1    3700 2150
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	3700 2150 3700 2250
@@ -153,7 +152,7 @@ F 1 "CONN_02X10" V 4100 3200 50  0000 C CNN
 F 2 "hirose-df40:DF40-20pin-Header" H 4100 2000 60  0001 C CNN
 F 3 "" H 4100 2000 60  0000 C CNN
 	1    4100 3200
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L +5V #PWR027
@@ -164,7 +163,7 @@ F 1 "+5V" H 6900 2740 50  0000 C CNN
 F 2 "" H 6900 2600 60  0000 C CNN
 F 3 "" H 6900 2600 60  0000 C CNN
 	1    6900 2600
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	4350 4700 7850 4700
@@ -215,7 +214,7 @@ F 1 "+BATT" H 3300 3690 50  0000 C CNN
 F 2 "" H 3300 3550 60  0000 C CNN
 F 3 "" H 3300 3550 60  0000 C CNN
 	1    3300 3550
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L PWR_FLAG #FLG029
@@ -226,7 +225,7 @@ F 1 "PWR_FLAG" H 2900 3730 50  0000 C CNN
 F 2 "" H 2900 3550 60  0000 C CNN
 F 3 "" H 2900 3550 60  0000 C CNN
 	1    2900 3550
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	4550 4050 4350 4050
@@ -247,7 +246,7 @@ F 1 "TLV70233DBV" H 6650 4550 40  0000 C CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 6550 4450 35  0000 C CIN
 F 3 "" H 6550 4350 60  0000 C CNN
 	1    6550 4350
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	6100 4450 6100 4300
@@ -266,7 +265,7 @@ F 1 "PWR_FLAG" H 4550 4230 50  0000 C CNN
 F 2 "" H 4550 4050 60  0000 C CNN
 F 3 "" H 4550 4050 60  0000 C CNN
 	1    4550 4050
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L CONN_01X01 P1
@@ -277,7 +276,7 @@ F 1 "3V3" V 8250 4100 50  0000 C CNN
 F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 8150 4100 60  0001 C CNN
 F 3 "" H 8150 4100 60  0000 C CNN
 	1    8150 4100
-	0    -1   -1   0   
+	0    -1   -1   0
 $EndComp
 $Comp
 L D_Schottky_x2_KCom_AAK D4
@@ -288,7 +287,7 @@ F 1 "D_Schottky_x2_KCom_AAK" H 7200 3400 50  0000 C CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 7200 3300 60  0001 C CNN
 F 3 "" H 7200 3300 60  0000 C CNN
 	1    7200 3300
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L R_Small R12
@@ -299,7 +298,7 @@ F 1 "1k" H 7980 4660 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" H 7950 4700 60  0001 C CNN
 F 3 "" H 7950 4700 60  0000 C CNN
 	1    7950 4700
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L LED D5
@@ -310,7 +309,7 @@ F 1 "Red" H 8300 4600 50  0000 C CNN
 F 2 "LEDs:LED_0603" H 8300 4700 60  0001 C CNN
 F 3 "" H 8300 4700 60  0000 C CNN
 	1    8300 4700
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Connection ~ 7750 4700
 Wire Wire Line
@@ -327,7 +326,7 @@ F 1 "5V" V 6050 3300 50  0000 C CNN
 F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 5950 3300 60  0001 C CNN
 F 3 "" H 5950 3300 60  0000 C CNN
 	1    5950 3300
-	0    -1   -1   0   
+	0    -1   -1   0
 $EndComp
 Wire Wire Line
 	3350 2750 3550 2750
@@ -342,7 +341,7 @@ F 1 "CONN_01X01" V 5200 4400 50  0000 C CNN
 F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 5100 4400 50  0001 C CNN
 F 3 "" H 5100 4400 50  0000 C CNN
 	1    5100 4400
-	0    -1   -1   0   
+	0    -1   -1   0
 $EndComp
 Wire Wire Line
 	5100 4600 5100 4700
@@ -359,7 +358,7 @@ F 1 "GND" H 7750 4950 50  0000 C CNN
 F 2 "" H 7750 5100 50  0000 C CNN
 F 3 "" H 7750 5100 50  0000 C CNN
 	1    7750 5100
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Text Notes 7050 7050 0    60   ~ 0
 Copyright 2016 Chickadee Tech LLC\n\nThis work is licensed under the Creative Commons Attribution 4.0 International License.\nTo view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/\nor send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.\n
